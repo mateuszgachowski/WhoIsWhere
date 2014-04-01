@@ -1,0 +1,35 @@
+<div id="user-profile-modal" class="modal fade" data-backdrop="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">{{userProfile.name}}</h4>
+      </div>
+      <div class="modal-body clearfix">
+        <div class="thumbnail pull-left">
+          <img ng-src="{{userProfile.image || 'media/images/person-placeholder.png'}}" alt="{{userProfile.name}}">
+        </div>
+        <dl class="pull-left">
+          <dt>Position</dt>
+          <dd>{{userProfile.position || 'No Data'}}</dd>
+
+          <dt>Birthday</dt>
+          <dd>{{userProfile.birthday || 'No Data'}}</dd>
+
+          <dt>Team</dt>
+          <dd>{{userProfile.teamName || 'No Data'}}</dd>
+
+          <dt ng-show="userProfile.productName || userProfile.projectName">Product / Project</dt>
+          <dd ng-show="userProfile.productName || userProfile.projectName">{{userProfile.productName}} / {{userProfile.projectName}}</dd>
+        </dl>
+        <div class="panel panel-default" ng-show="userProfile.teamLogo || userProfile.projectLogo">
+          <div class="panel-heading">Belongs to</div>
+          <div class="panel-body clearfix">
+            <img ng-src="{{userProfile.projectLogo}}" alt="" width="100" height="100" class="thumbnail pull-left" ng-show="userProfile.projectLogo">
+            <img ng-src="{{userProfile.teamLogo}}" alt="" width="100" height="100" class="thumbnail pull-left" ng-show="userProfile.teamLogo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

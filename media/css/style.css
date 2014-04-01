@@ -1,0 +1,85 @@
+body {
+  padding-top: 50px;
+}
+
+.application-background {
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.office-wrapper {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-open .application-background {
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+}
+
+#officeView {
+  margin-top: 10px;
+  width: 2623px;
+  height: 548px;
+  background-image: url(../images/office-full.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.column {
+  float: left;
+  margin-top: 30px;
+}
+#officeView .desk {
+  width: 36px;
+  height: 54px;
+  padding: 0 2px;
+  position: absolute;
+}
+
+#officeView .desk .owner-name {
+  font-size: 11px;
+  line-height: 11px;
+  display: block;
+  word-wrap: break-word;
+}
+
+#officeView .desk .desk-number {
+  text-align: center;
+  line-height: 54px;
+  display: block;
+}
+
+#officeView .desk .team-logo,
+#officeView .desk .project-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.names-rotated #officeView .desk {
+  width: 54px;
+  height: 36px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.names-rotated #officeView .desk .desk-number {
+  line-height: 36px;
+}
+
+#user-profile-modal .thumbnail {
+  margin: 0 20px 0 0;
+}
+
+#user-profile-modal .panel {
+  clear: both;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #b7b7b7;
+}

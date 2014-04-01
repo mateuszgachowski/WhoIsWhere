@@ -1,0 +1,6 @@
+<div ng-repeat="desk in desks" class="desk" style="left: {{desk.x}}px; top: {{desk.y}}px" ng-attr-id="{{$index}}" ng-click="showProfile(desk.id)">
+  <b class="owner-name" ng-hide="$parent.showNumbers || $parent.showTeams || $parent.showProjects">{{desk.owner.name}}</b>
+  <i class="desk-number" ng-show="$parent.showNumbers">{{desk.id}}</i>
+  <img ng-src="{{desk.owner.teamLogo}}" alt="{{desk.owner.teamName}}" ng-show="$parent.showTeams" width="30" class="team-logo">
+  <img ng-src="{{desk.owner.projectLogo}}" alt="{{desk.owner.projectName}}" ng-show="$parent.showProjects" width="30" class="project-logo">
+</div>
