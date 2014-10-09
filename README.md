@@ -2,6 +2,10 @@
 
 A fast and smart tool for big offices!
 
+![Full view](https://raw.githubusercontent.com/mateuszgachowski/WhoIsWhere/master/media/images/sample1.png "Full view office")
+![User popup](https://raw.githubusercontent.com/mateuszgachowski/WhoIsWhere/master/media/images/sample2.png "Profile popup")
+![Desk Numbers](https://raw.githubusercontent.com/mateuszgachowski/WhoIsWhere/master/media/images/sample3.png "Desk numbers")
+
 ## Installation
 ```
 bower install
